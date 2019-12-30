@@ -18,13 +18,13 @@ public class StaticJson {
 	public void AddBook() throws IOException {
 	    RestAssured.baseURI="http://216.10.245.166";
 	    
-	    Response res=RestAssured.given().
+	    String res=RestAssured.given().
 	    header("Content-Type","application/json").
 	    body(GenerateStringFromResponse("//home//v-swati.patil//eclipse-workspace//LibraryAPI//src//main//resources//payload.json")).log().all().
 	    when().
 	    post(Resources.placePostData()).
 	    then().assertThat().statusCode(200).log().all().
-	    extract().response();
+	    extract().response().asString();
 	    JsonPath js=utilities.rawJson(res);
 	    String id=js.get("ID");
 	    System.out.println(id);

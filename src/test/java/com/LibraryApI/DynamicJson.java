@@ -33,13 +33,13 @@ public void  getData() throws FileNotFoundException {
 public void AddBook(String isbn,String aisle) throws IOException {
     RestAssured.baseURI=prop.getProperty("HOST");
     
-    Response res=RestAssured.given().
+    String res=RestAssured.given().
     header("Content-Type","application/json").
     body(Payload.addBook(isbn,aisle)).log().all().
     when().
     post(Resources.placePostData()).
     then().assertThat().statusCode(200).log().all().
-    extract().response();
+    extract().response().asString();
     JsonPath js=utilities.rawJson(res);
     String id=js.get("ID");
     System.out.println(id);

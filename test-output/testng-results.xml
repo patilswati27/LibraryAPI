@@ -1,65 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2032" started-at="2019-12-17T11:57:48Z" finished-at="2019-12-17T11:57:50Z">
+  <suite name="Default suite" duration-ms="2831" started-at="2019-12-29T07:49:49Z" finished-at="2019-12-29T07:49:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2032" started-at="2019-12-17T11:57:48Z" finished-at="2019-12-17T11:57:50Z">
-      <class name="com.LibraryApI.DynamicJson">
-        <test-method status="PASS" signature="getData()[pri:0, instance:com.LibraryApI.DynamicJson@3fee9989]" name="getData" is-config="true" duration-ms="10" started-at="2019-12-17T11:57:48Z" finished-at="2019-12-17T11:57:48Z">
+    <test name="Default test" duration-ms="2831" started-at="2019-12-29T07:49:49Z" finished-at="2019-12-29T07:49:52Z">
+      <class name="com.LibraryApI.AddBook">
+        <test-method status="PASS" signature="addBook()[pri:0, instance:com.LibraryApI.AddBook@35047d03]" name="addBook" duration-ms="2794" started-at="2019-12-29T07:49:49Z" finished-at="2019-12-29T07:49:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getData -->
-        <test-method status="PASS" signature="AddBook(java.lang.String, java.lang.String)[pri:0, instance:com.LibraryApI.DynamicJson@3fee9989]" name="AddBook" duration-ms="1754" started-at="2019-12-17T11:57:48Z" data-provider="BooksData" finished-at="2019-12-17T11:57:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[def]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddBook -->
-        <test-method status="PASS" signature="AddBook(java.lang.String, java.lang.String)[pri:0, instance:com.LibraryApI.DynamicJson@3fee9989]" name="AddBook" duration-ms="129" started-at="2019-12-17T11:57:50Z" data-provider="BooksData" finished-at="2019-12-17T11:57:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ghj]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddBook -->
-        <test-method status="PASS" signature="AddBook(java.lang.String, java.lang.String)[pri:0, instance:com.LibraryApI.DynamicJson@3fee9989]" name="AddBook" duration-ms="115" started-at="2019-12-17T11:57:50Z" data-provider="BooksData" finished-at="2019-12-17T11:57:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jkl]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[987]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddBook -->
-      </class> <!-- com.LibraryApI.DynamicJson -->
+        </test-method> <!-- addBook -->
+      </class> <!-- com.LibraryApI.AddBook -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

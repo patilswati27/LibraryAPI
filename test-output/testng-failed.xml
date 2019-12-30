@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.LibraryApI.DynamicJson">
+      <class name="com.LibraryApI.AddBook">
         <methods>
-          <include name="getData"/>
-          <include name="AddBook"/>
+          <include name="addBook"/>
         </methods>
-      </class> <!-- com.LibraryApI.DynamicJson -->
+      </class> <!-- com.LibraryApI.AddBook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

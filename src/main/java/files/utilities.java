@@ -17,10 +17,10 @@ public class utilities {
 		
 		return xml;
 		}
-	public static JsonPath rawJson(Response res) {
-		String response=res.asString();
+	public static JsonPath rawJson(String res) {
+		//String response=res.asString();
 		//System.out.println(response);
-		JsonPath json=new JsonPath(response);
+		JsonPath json=new JsonPath(res);
 		return json;
 	}
 
